@@ -25,14 +25,23 @@ A comprehensive PowerShell script to debloat Windows 11/10 and optimize system p
 ## Quick Start
 
 1. **Download the script** or clone this repository
-2. **Right-click** `windows-debloat-script.ps1` → **Run with PowerShell (Admin)**
+2. **Run the script using one of these methods:**
+
+   **Method 1: Right-click execution**
+   - Right-click `windows-debloat-script.ps1` → **Run with PowerShell (Admin)**
+
+   **Method 2: Command line (Recommended)**
+   - Open **PowerShell as Administrator**
+   - Navigate to script directory: `cd path\to\Windows-11-10-debloater`
+   - Run: `powershell.exe -ExecutionPolicy Bypass -File ".\windows-debloat-script.ps1"`
+
 3. **Script automatically creates a system restore point** for safety
 4. **Follow the prompts** and wait for completion
 5. **Restart your computer** for all changes to take effect
 
 ```powershell
-# Or run from Admin PowerShell
-.\windows-debloat-script.ps1
+# Alternative: Run with execution policy bypass
+powershell.exe -ExecutionPolicy Bypass -File ".\windows-debloat-script.ps1"
 ```
 
 ## What Gets Removed/Disabled
@@ -79,6 +88,7 @@ A comprehensive PowerShell script to debloat Windows 11/10 and optimize system p
 
 - **Administrator privileges required**
 - **System restore point automatically created** before modifications
+- **Use execution policy bypass** if you encounter digital signature errors
 - **Restart needed** for all changes to take effect
 - **Windows Search will be disabled** (no file search from Start Menu)
 - **Some UI processes may restart automatically**
